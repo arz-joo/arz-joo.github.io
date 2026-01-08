@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- عنوان اصلی صفحه - خیلی مهم برای سئو برند -->
+    <title>ارزجو - arz joo</title>
+    
+    <!-- توضیحات متا - ظاهر در نتایج گوگل -->
+    <meta name="description" content="ارزجو: مرجع سریع و ساده قیمت لحظه‌ای ارزهای دیجیتال از بایننس، نوبیتکس، بیت‌پین و قیمت زنده ارزهای فیات با جستجوی آسان." />
+    
+    <!-- کلمات کلیدی -->
+    <meta name="keywords" content="ارزجو, قیمت ارز دیجیتال, قیمت لحظه ای کریپتو, بایننس, نوبیتکس, بیت پین, قیمت دلار, قیمت یورو" />
+    
+    <!-- اجازه کراول و فالو کردن به ربات‌های گوگل -->
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph - برای اشتراک زیبا در تلگرام، توییتر و ... -->
+    <meta property="og:title" content="ارزجو - قیمت لحظه‌ای ارزها" />
+    <meta property="og:description" content="ارزجو: دسترسی آسان به قیمت زنده از منابع مختلف" />
+    <meta property="og:image" content="https://arz-joo.github.io/statics/full_logo.png" />
+    <meta property="og:url" content="https://arz-joo.github.io/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://arz-joo.github.io/statics/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://arz-joo.github.io/statics/favicon.ico">
+    
+    <style>
+        :root {
+            --bg-dark: #0d1513;
+            --bg-card: #142824;
+            --accent-green: #00c48c;
+            --text-primary: #e0f5ee;
+            --text-secondary: #a8d8ca;
+            --border: #00c48c30;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: 'Vazirmatn', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 0 20px #00c48c20;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-green);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 15px #00c48c40;
+        }
+        h1 {
+            margin: 0.5rem 0;
+            font-size: 1.8rem;
+            color: var(--accent-green);
+        }
+        p {
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .btn {
+            background-color: transparent;
+            border: 2px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 0.9rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+        .btn:hover {
+            background-color: var(--accent-green);
+            color: var(--bg-dark);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--accent-green);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ریسپانسیو برای موبایل */
+        @media (max-width: 480px) {
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://t.me/arzjoo_ch" target="_blank">
+            <img src="https://arz-joo.github.io/statics/full_logo.png" alt="لوگوی ارزجو - مرجع قیمت ارز دیجیتال" class="profile-img" />
+        </a>
+        <h1>ارزجو</h1>
+        <p>
+            ارزجو به شما کمک می‌کند به راحتی و سریع به قیمت لحظه‌ای ارزهای دیجیتال از صرافی‌های معتبر و قیمت ارزهای فیات دسترسی داشته باشید.
+        </p>
+        <div class="button-grid">
+            <a href="https://arz-joo.github.io/binance" class="btn">بایننس</a>
+            <a href="https://arz-joo.github.io/nobitex" class="btn">نوبیتکس</a>
+            <a href="https://arz-joo.github.io/bitpin" class="btn">بیت‌پین</a>
+            <a href="https://arz-joo.github.io/chand" class="btn">چند</a>
+        </div>
+    </div>
+</body>
+</html>
