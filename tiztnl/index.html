@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>تعرفه اشتراک‌ها | کلید دسترسی</title>
+  <title>TizTNL</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
       --green-main: #4a6f3e;
       --green-dark: #2e4a28;
       --green-glow: #5e8c4f;
+      --green-neon: #72a55e;
       --text: #e8f5e9;
       --text-light: #a8c0a4;
       --border: rgba(74, 111, 62, 0.35);
@@ -93,10 +94,7 @@
     .plan-card:nth-child(8) { animation-delay: 0.8s; }
 
     @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .plan-card::before {
@@ -182,16 +180,31 @@
 
     .popular {
       position: absolute;
-      top: -14px;
+      top: -12px;
       left: 50%;
       transform: translateX(-50%);
       background: #6fa060;
       color: white;
-      padding: 0.35rem 1.2rem;
+      padding: 0.4rem 1.4rem;
       border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      box-shadow: 0 4px 15px rgba(111,160,96,0.4);
+      font-size: 0.9rem;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(111,160,96,0.5);
+      white-space: nowrap;
+      z-index: 2;
+    }
+
+    /* افکت ویژه برای پلن پیشنهادی */
+    .featured {
+      box-shadow: 0 0 25px rgba(114,165,94,0.4),
+                  0 0 50px rgba(114,165,94,0.2);
+      animation: pulse-glow 3s infinite ease-in-out;
+      border: 1.5px solid var(--green-neon);
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 25px rgba(114,165,94,0.4), 0 0 50px rgba(114,165,94,0.15); }
+      50%      { box-shadow: 0 0 35px rgba(114,165,94,0.7), 0 0 70px rgba(114,165,94,0.3); }
     }
 
     @media (max-width: 480px) {
@@ -199,6 +212,7 @@
       .plan-card { padding: 1.6rem 1.3rem; }
       h1 { font-size: 2.4rem; }
       .price { font-size: 2.1rem; }
+      .popular { font-size: 0.85rem; padding: 0.35rem 1.1rem; }
     }
   </style>
 </head>
@@ -206,7 +220,7 @@
 
   <div class="container">
     <h1>تعرفه اشتراک‌ها</h1>
-    <p class="subtitle">دسترسی سریع، امن و پایدار — با کلید اختصاصی</p>
+    <p class="subtitle">دسترسی سریع، امن و پایدار — با تیزتانل</p>
 
     <div class="plans-grid">
 
@@ -219,7 +233,7 @@
           <strong>مدت:</strong> یک ماهه
         </div>
         <div class="price">۲۰۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
       <!-- پلن ۲ -->
@@ -231,12 +245,11 @@
           <strong>مدت:</strong> یک ماهه
         </div>
         <div class="price">۳۵۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
-      <!-- پلن ۳ -->
+      <!-- پلن ۳ - دیگه ویژه نیست -->
       <div class="plan-card">
-        <div class="popular">پیشنهاد ویژه</div>
         <div class="plan-title">پلن محبوب</div>
         <div class="plan-meta">
           <strong>حجم:</strong> ۱۵۰ گیگابایت<br>
@@ -244,7 +257,7 @@
           <strong>مدت:</strong> یک ماهه
         </div>
         <div class="price">۴۵۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
       <!-- پلن ۴ -->
@@ -256,11 +269,12 @@
           <strong>مدت:</strong> یک ماهه
         </div>
         <div class="price">۶۰۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
-      <!-- پلن ۵ -->
-      <div class="plan-card">
+      <!-- پلن ۵ - حالا ویژه شده -->
+      <div class="plan-card featured">
+        <div class="popular">پیشنهاد ویژه</div>
         <div class="plan-title">پلن اقتصادی ۲ماهه</div>
         <div class="plan-meta">
           <strong>حجم:</strong> ۱۰۰ گیگابایت<br>
@@ -268,7 +282,7 @@
           <strong>مدت:</strong> دو ماهه
         </div>
         <div class="price">۳۵۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
       <!-- پلن ۶ -->
@@ -280,7 +294,7 @@
           <strong>مدت:</strong> دو ماهه
         </div>
         <div class="price">۷۰۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
       <!-- پلن ۷ -->
@@ -292,7 +306,7 @@
           <strong>مدت:</strong> سه ماهه
         </div>
         <div class="price">۵۵۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
       <!-- پلن ۸ -->
@@ -304,7 +318,7 @@
           <strong>مدت:</strong> سه ماهه
         </div>
         <div class="price">۱٬۱۰۰٬۰۰۰ <small>تومان</small></div>
-        <a href="https://t.me/YourChannelLink" target="_blank" class="btn-buy">خرید اشتراک</a>
+        <a href="https://t.me/tiztnl?direct" target="_blank" class="btn-buy">خرید اشتراک</a>
       </div>
 
     </div>
