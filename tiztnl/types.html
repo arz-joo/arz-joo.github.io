@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>انواع خودروها</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    .card-img {
+      height: 160px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+      color: #2c3e50;
+    }
+    .card p {
+      margin: 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>انواع خودروها</h1>
+    
+    <div class="grid">
+
+      <a href="/sedan" class="card">
+        <div class="card-img">سدان</div>
+        <div class="card-content">
+          <h2>سدان (Sedan)</h2>
+          <p>خودروهای خانوادگی با صندوق عقب جدا، ۴ درب، راحت و پرطرفدار</p>
+        </div>
+      </a>
+
+      <a href="/hatchback" class="card">
+        <div class="card-img">هاچ‌بک</div>
+        <div class="card-content">
+          <h2>هاچ‌بک (Hatchback)</h2>
+          <p>کوچک و جمع‌وجور، صندوق عقب با درِ بزرگ، مناسب شهر</p>
+        </div>
+      </a>
+
+      <a href="/suv" class="card">
+        <div class="card-img">شاسی‌بلند</div>
+        <div class="card-content">
+          <h2>شاسی‌بلند / SUV</h2>
+          <p>بلندقد، فضای زیاد، مناسب خانواده و سفر</p>
+        </div>
+      </a>
+
+      <a href="/crossover" class="card">
+        <div class="card-img">کراس‌اوور</div>
+        <div class="card-content">
+          <h2>کراس‌اوور (Crossover)</h2>
+          <p>ترکیب سدان و SUV، محبوب‌ترین کلاس فعلی بازار</p>
+        </div>
+      </a>
+
+      <a href="/coupe" class="card">
+        <div class="card-img">کوپه</div>
+        <div class="card-content">
+          <h2>کوپه (Coupe)</h2>
+          <p>دو درب، اسپرت، ظاهر جذاب، معمولاً ۲+۲ صندلی</p>
+        </div>
+      </a>
+
+      <a href="/convertible" class="card">
+        <div class="card-img">کابریو</div>
+        <div class="card-content">
+          <h2>کابریولت / کانورتیبل</h2>
+          <p>سقف بازشو (پارچه‌ای یا سخت)، حس رانندگی باز</p>
+        </div>
+      </a>
+
+      <a href="/pickup" class="card">
+        <div class="card-img">وانت</div>
+        <div class="card-content">
+          <h2>پیکاپ / وانت</h2>
+          <p>صندوق بار عقب باز، مناسب کار و آفرود سبک</p>
+        </div>
+      </a>
+
+      <a href="/wagon" class="card">
+        <div class="card-img">استیشن</div>
+        <div class="card-content">
+          <h2>استیشن واگن</h2>
+          <p>فضای بار خیلی زیاد، سقف کشیده تا عقب</p>
+        </div>
+      </a>
+
+      <a href="/minivan" class="card">
+        <div class="card-img">مینی‌ون</div>
+        <div class="card-content">
+          <h2>مینی‌ون / MPV</h2>
+          <p>خودروهای خانوادگی بزرگ، ۷–۸ نفره</p>
+        </div>
+      </a>
+
+      <a href="/sports-car" class="card">
+        <div class="card-img">اسپرت</div>
+        <div class="card-content">
+          <h2>خودروهای اسپرت / سوپراسپرت</h2>
+          <p>عملکرد بالا، طراحی تهاجمی، لذت رانندگی</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
